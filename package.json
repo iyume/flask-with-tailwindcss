@@ -1,0 +1,14 @@
+{
+  "name": "tailwind-front",
+  "version": "1.0.0",
+  "description": "NoNoNo",
+  "scripts": {
+    "build": "postcss static/tailwind.css -o static/style.css"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.0",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
