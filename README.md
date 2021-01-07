@@ -14,6 +14,7 @@ npm i autoprefixer postcss postcss-cli tailwindcss
 > Use it if you are in developing
 
 - Turn on the purgecss
+
 Switch to `tailwind.config.js`
 Find the key `purge` and set its key `enabled`'s value to `true`
 
