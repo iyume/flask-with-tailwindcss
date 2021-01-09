@@ -52,7 +52,7 @@ theme('borderWidth.t.DEFAULT')
 theme('borderWidth.t[DEFAULT]') # do the same role
 ```
 
-**addBase()**
+`addBase()`
 > Extra customization - to do with plugin - little advanced
 
 - Use plugin
