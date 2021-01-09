@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - R{% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block userIMG %}
+{% endblock %}
+
+{% block content %}
+        <!-- left -->
+        <div class="container float-left">
+        </div>
+        <!-- right -->
+        <div class="container w-2/5 my-auto float-right items-center">
+            <div class="flex p-10">
+                <form>
+                    <label class="block">
+                        <input
+                            type="text"
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                            placeholder="请输入用户名"
+                        />
+                    </label>
+                    <label class="block">
+                        <input
+                            type="password"
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                            placeholder="请输入密码"
+                        />
+                    </label>
+                    <input
+                        type="submit"
+                        class="block mx-auto mt-4 py-2 px-4 bg-main"
+                        placeholder="登录"
+                    />
+                </form>
+            </div>
+        </div>
+{% endblock %}

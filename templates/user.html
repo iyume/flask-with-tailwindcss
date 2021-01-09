@@ -1,30 +1,37 @@
 {% extends 'base.html' %}
 
-{% block title %}Index - R{% endblock %}
+{% block title %}User - R{% endblock %}
 
 {% block content %}
         <div class="flex mt-12 justify-between">
             <!-- left nav -->
-            <div class="container bg-white w-48 h-full pt-2 pb-2 text-base font-light rounded-lg">
+            <div class="container bg-white w-48 h-full py-2 text-base font-light rounded-lg">
+                <div class="flex items-center w-full my-6 justify-center">
+                    <img
+                        class="w-24 h-24 rounded-full"
+                        alt="Avater"
+                        src="https://cdn.jsdelivr.net/gh/iyume/static/hexo-blog/img/avatar.png"
+                    />
+                </div>
                 <div class="flex items-center grid grid-cols-1">
                     <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
                         <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
                         <span class="pl-3">首页</span>
                     </a>
                 </div>
-                <hr class="w-3/4 mb-2">
+                <hr class="w-3/4">
                 <div class="flex items-center grid grid-cols-1">
-                    <span class="ml-8 text-gray-400">我的题库</span>
+                    <span class="ml-8 text-gray-400">个人中心</span>
                     <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
                         <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
-                        <span class="pl-3">开始做题</span>
+                        <span class="pl-3">查看信息</span>
                     </a>
                     <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
                         <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
-                        <span class="pl-3">做题记录</span>
+                        <span class="pl-3">修改资料</span>
                     </a>
                 </div>
-                <hr class="w-3/4 mb-2">
+                <hr class="w-3/4">
                 <div class="flex items-center grid grid-cols-1">
                     <span class="ml-8 text-gray-400">测试数据</span>
                     <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
@@ -44,14 +51,7 @@
             <!-- right main -->
             <div class="container w-4/5">
                 <div class="flex bg-white rounded-lg">
-                    <a href="/login" class="m-12 text-green">查看登录页面</a>
-                </div>
-                <div class="flex bg-white rounded-lg mt-12">
-                    <p class="m-12">abc</p>
-                </div>
-                <div class="flex bg-white rounded-lg mt-12">
-                    <p class="m-12">abc</p>
-                </div>
+                    <p class="m-12">个人中心</p>
             </div>
         </div>
 {% endblock %}

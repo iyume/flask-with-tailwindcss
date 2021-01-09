@@ -6,6 +6,7 @@
     "build": "postcss static/tailwind.css -o static/style.css"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
     "autoprefixer": "^10.2.0",
     "postcss": "^8.2.2",
     "postcss-cli": "^8.3.1",
