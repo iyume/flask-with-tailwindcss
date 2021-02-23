@@ -1,0 +1,15 @@
+{% extends 'tiku/area/index.html' %}
+
+{% block area_status2 %}bg-gray-200{% endblock %}
+
+{% block paperentry %}
+                <div class="flex bg-white rounded-lg p-4">
+                    <div class="font-light text-base">
+                        <span class="text-gray-700">已做 {{ 1 }} 题</span>
+                        <span class="text-gray-400"> / 共 17 题</span>
+                    </div>
+                    <div class="ml-4 text-blue-400 text-base">
+                        <a href="{{ url_for('tiku_paper.route1') }}">随机选题</a>
+                    </div>
+                </div>
+{% endblock %}

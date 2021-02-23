@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}User - R{% endblock %}
+
+{% block content %}
+        <div class="flex mt-12 justify-between">
+            <!-- left nav -->
+            <div class="container bg-white w-48 h-full py-2 text-base font-light rounded-lg">
+                <div class="flex items-center w-full my-6 justify-center">
+                    <img
+                        class="w-24 h-24 rounded-full"
+                        alt="Avater"
+                        src="https://cdn.jsdelivr.net/gh/iyume/static/hexo-blog/img/avatar.png"
+                    />
+                </div>
+                <div class="flex items-center grid grid-cols-1">
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">首页</span>
+                    </a>
+                </div>
+                <hr class="w-3/4">
+                <div class="flex items-center grid grid-cols-1">
+                    <span class="ml-8 text-gray-400">个人中心</span>
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">查看信息</span>
+                    </a>
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">修改资料</span>
+                    </a>
+                </div>
+                <hr class="w-3/4">
+                <div class="flex items-center grid grid-cols-1">
+                    <span class="ml-8 text-gray-400">测试数据</span>
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">测试数据</span>
+                    </a>
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">测试数据</span>
+                    </a>
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">测试数据</span>
+                    </a>
+                </div>
+            </div>
+            <!-- right main -->
+            <div class="container w-4/5">
+                <div class="flex bg-white rounded-lg">
+                    <p class="m-12">个人中心</p>
+            </div>
+        </div>
+{% endblock %}

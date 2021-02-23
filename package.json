@@ -1,0 +1,17 @@
+{
+  "name": "flask-with-tailwind",
+  "version": "0.1.0",
+  "description": "blablabla",
+  "scripts": {
+    "build": "postcss app/static/tailwind.css -o app/static/style.css"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1"
+  }
+}
