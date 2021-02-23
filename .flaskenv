@@ -1,4 +1,4 @@
-FLASK_APP = app.py
+FLASK_APP = app.app:app
 FLASK_ENV = deveploment
 FLASK_DEBUG = 1
 FLASK_RUN_HOST = 0.0.0.0

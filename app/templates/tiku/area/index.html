@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}Index - R{% endblock %}
+
+{% block content %}
+        <div class="flex mt-12 justify-between">
+            <!-- left nav -->
+            <div class="container bg-white w-48 h-full py-2 text-base font-light rounded-lg">
+                <div class="flex items-center grid grid-cols-1">
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="{{ url_for('tiku_area.index') }}">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">首页</span>
+                    </a>
+                </div>
+                <hr class="w-3/4 mb-2">
+                <div class="flex items-center grid grid-cols-1">
+                    <span class="ml-8 text-gray-400">我的题库</span>
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="{{ url_for('tiku_area.index') }}">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">开始做题</span>
+                    </a>
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="{{ url_for('tiku_area.index') }}">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">做题记录</span>
+                    </a>
+                </div>
+                <!-- <hr class="w-3/4 mb-2">
+                <div class="flex items-center grid grid-cols-1">
+                    <span class="ml-8 text-gray-400">测试数据</span>
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">测试数据</span>
+                    </a>
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">测试数据</span>
+                    </a>
+                    <a class="flex px-4 items-center h-12 w-full hover:bg-gray-200" href="#">
+                        <svg class="inline-block w-6 h-6 ml-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"/></svg>
+                        <span class="pl-3">测试数据</span>
+                    </a>
+                </div> -->
+            </div>
+            <!-- right content -->
+            <div class="container flex flex-col space-y-8 w-4/5">
+                <div class="flex bg-white rounded-lg">
+                    <a href="/login" class="m-12 text-blue-400">查看登录页面</a>
+                    <a href="/user" class="m-12 text-blue-400">查看个人中心</a>
+                </div>
+                <div class="flex bg-white rounded-lg px-2">
+                    <div class="flex w-full">
+                        <a href="{{ url_for('tiku_area.type1') }}" class="inline-block px-6 py-4 w-28 {% block area_status1 %}hover:bg-gray-200{% endblock %}">
+                            <svg class="block w-12 h-12 m-auto mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 9V5H9v4H5v2h4v4h2v-4h4V9h-4zm-1 11a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"/></svg>
+                            <p>基金基础</p>
+                        </a>
+                        <a href="{{ url_for('tiku_area.type2') }}" class="inline-block px-6 py-4 w-28 {% block area_status2 %}hover:bg-gray-200{% endblock %}">
+                            <svg class="block w-12 h-12 m-auto mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 9V5H9v4H5v2h4v4h2v-4h4V9h-4zm-1 11a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"/></svg>
+                            <p>基金法规</p>
+                        </a>
+                        <a href="{{ url_for('tiku_area.type3') }}" class="inline-block px-6 py-4 w-28 {% block area_status3 %}hover:bg-gray-200{% endblock %}">
+                            <svg class="block w-12 h-12 m-auto mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M11 9V5H9v4H5v2h4v4h2v-4h4V9h-4zm-1 11a10 10 0 1 1 0-20 10 10 0 0 1 0 20z"/></svg>
+                            <p>证券法规</p>
+                        </a>
+                    </div>
+                </div>
+                {% block paperentry %}{% endblock %}
+            </div>
+        </div>
+{% endblock %}

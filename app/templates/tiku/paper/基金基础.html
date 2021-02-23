@@ -1,0 +1,56 @@
+{% extends 'tiku/paper/base.html' %}
+
+{% block nav_tiku_link %}
+<a href="{{ url_for('tiku_area.type1') }}">基金基础</a>
+{% endblock %}
+
+{% block paper_type%}随机抽题{% endblock %}
+
+{% block paper_content_header %}
+                    <div class="pb-1 font-medium text-lg">
+                        <p>基金基础随机抽题练习</p>
+                    </div>
+                    <div class="font-light text-base">
+                        <span class="text-gray-700">已做 {{ 1 }} 题</span>
+                        <span class="text-gray-400"> / 共 17 题</span>
+                    </div>
+{% endblock %}
+
+{% block paper_content_body %}
+                    <div class="container">
+                        <p class="font-medium text-base py-3">{{ 1 }}、{% if question %}{{ question['q'] }}{% else %}题目拉取出错{% endif %}</p>
+                        <ul class="font-light text-sm">
+                            <li class="px-2 py-2 cursor-pointer hover:bg-gray-100">
+                                <svg class="inline-block w-6 h-6" t="1613029274773" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1744" width="250" height="250"><path d="M512 85.333333C276.48 85.333333 85.333333 276.48 85.333333 512S276.48 938.666667 512 938.666667 938.666667 747.52 938.666667 512 747.52 85.333333 512 85.333333z m0 796.444445c-203.662222 0-369.777778-166.115556-369.777778-369.777778S308.337778 142.222222 512 142.222222 881.777778 308.337778 881.777778 512 715.662222 881.777778 512 881.777778z" p-id="1745" fill="#cdcdcd"></path></svg>
+                                <span class="my-auto ml-2">{% if question %}{{ question['a'] }}{% endif %}</span>
+                            </li>
+                            <li class="px-2 py-2 cursor-pointer hover:bg-gray-100">
+                                <svg class="inline-block w-6 h-6" t="1613029274773" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1744" width="250" height="250"><path d="M512 85.333333C276.48 85.333333 85.333333 276.48 85.333333 512S276.48 938.666667 512 938.666667 938.666667 747.52 938.666667 512 747.52 85.333333 512 85.333333z m0 796.444445c-203.662222 0-369.777778-166.115556-369.777778-369.777778S308.337778 142.222222 512 142.222222 881.777778 308.337778 881.777778 512 715.662222 881.777778 512 881.777778z" p-id="1745" fill="#cdcdcd"></path></svg>
+                                <span class="my-auto ml-2">{% if question %}{{ question['b'] }}{% endif %}</span>
+                            </li>
+                            <li class="px-2 py-2 cursor-pointer hover:bg-gray-100">
+                                <svg class="inline-block w-6 h-6" t="1613029274773" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1744" width="250" height="250"><path d="M512 85.333333C276.48 85.333333 85.333333 276.48 85.333333 512S276.48 938.666667 512 938.666667 938.666667 747.52 938.666667 512 747.52 85.333333 512 85.333333z m0 796.444445c-203.662222 0-369.777778-166.115556-369.777778-369.777778S308.337778 142.222222 512 142.222222 881.777778 308.337778 881.777778 512 715.662222 881.777778 512 881.777778z" p-id="1745" fill="#cdcdcd"></path></svg>
+                                <span class="my-auto ml-2">{% if question %}{{ question['c'] }}{% endif %}</span>
+                            </li>
+                            <li class="px-2 py-2 cursor-pointer hover:bg-gray-100">
+                                <svg class="inline-block w-6 h-6" t="1613029274773" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1744" width="250" height="250"><path d="M512 85.333333C276.48 85.333333 85.333333 276.48 85.333333 512S276.48 938.666667 512 938.666667 938.666667 747.52 938.666667 512 747.52 85.333333 512 85.333333z m0 796.444445c-203.662222 0-369.777778-166.115556-369.777778-369.777778S308.337778 142.222222 512 142.222222 881.777778 308.337778 881.777778 512 715.662222 881.777778 512 881.777778z" p-id="1745" fill="#cdcdcd"></path></svg>
+                                <span class="my-auto ml-2">{% if question %}{{ question['d'] }}{% endif %}</span>
+                            </li>
+                        </ul>
+                    </div>
+{% endblock %}
+
+{% block paper_content_tail %}
+                    <div class="container flex justify-around text-base">
+                        <a href="{{ url_for('tiku_paper.route1', type='random') }}" class="inline-block w-48 h-12 m-auto text-center">
+                            <span class="block align-middle leading-8">上一题</span>
+                            <span>&lt;</span>
+                        </a>
+                        <a href="{{ url_for('tiku_paper.route1', type='random') }}" class="inline-block w-48 h-12 m-auto text-center">
+                            <span class="block align-middle leading-8">下一题</span>
+                            <span>&gt;</span>
+                        </a>
+                    </div>
+{% endblock %}
+
+{% block back_to_link %}{{ url_for('tiku_area.type1') }}{% endblock %}

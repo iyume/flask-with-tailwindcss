@@ -7,7 +7,7 @@ module.exports = {
     enabled: true, // set to false if you are in developing
     preserveHtmlElements: true,
     content: [
-    './templates/*.html',
+      './app/templates/**/*.html',
     ],
   },
   darkMode: false, // or 'media' or 'class'
@@ -28,10 +28,13 @@ module.exports = {
       gray: colors.trueGray,
       yellow: colors.amber,
       indigo: colors.indigo,
+      blue: colors.blue,
     },
     extend: {
       width: {
         'normal': '1160px',
+        '870': '870px',
+        '280': '280px',
       },
       colors: {
         'green': colors.emerald[500],
@@ -62,6 +65,6 @@ module.exports = {
         },
       })
     }),
-    require('@tailwindcss/forms'),
+    // require('@tailwindcss/custom-forms'),
   ],
 }

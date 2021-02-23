@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <div class="h-12 pt-4 pb-8 text-sm">
+            <p class="inline-block">当前位置：</p>
+            <a href="{{ url_for('index') }}">首页</a>
+            <i> > </i>
+            <a href="{{ url_for('tiku_area.index') }}">题库</a>
+            <i> > </i>
+            {% block nav_tiku_link %}{% endblock %}
+            <i> > </i>
+            <p class="inline-block">{% block paper_type %}{% endblock %}</p>
+        </div>
+        <div class="flex justify-between">
+            <div class="container flex flex-col space-y-3 w-870">
+                <div class="bg-white rounded-lg px-7 py-5">
+                    {% block paper_content_header %}{% endblock %}
+                </div>
+                <div class="bg-white rounded-lg px-7 py-5">
+                    {% block paper_content_body %}{% endblock %}
+                </div>
+                <div class="bg-white rounded-lg px-7 py-3">
+                    {% block paper_content_tail %}{% endblock %}
+                </div>
+            </div>
+            <div class="container flex flex-col space-y-3 w-280">
+                <div class="bg-white rounded-lg px-7 py-5">
+                    <a href="{% block back_to_link %}{% endblock %}" class="text-blue-400">后退</a>
+                </div>
+            </div>
+        </div>
+{% endblock %}

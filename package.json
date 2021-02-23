@@ -1,15 +1,14 @@
 {
-  "name": "tailwind-front",
-  "version": "1.0.0",
-  "description": "NoNoNo",
+  "name": "flask-with-tailwind",
+  "version": "0.1.0",
+  "description": "blablabla",
   "scripts": {
-    "build": "postcss static/tailwind.css -o static/style.css"
+    "build": "postcss app/static/tailwind.css -o app/static/style.css"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.2.1",
-    "autoprefixer": "^10.2.0",
-    "postcss": "^8.2.2",
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.3"
   }
 }
